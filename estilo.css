@@ -1,0 +1,401 @@
+:root{
+    --colorfondo: #F3E0B5;
+    --colorletra: #000;
+    --colorfondomenu: #FFAE6D;
+    --colorletramenu: #fff;
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--colorfondo);
+    font-family: 'Roboto Slab', serif;
+    color: var(--colorletra);
+    
+    
+}
+
+nav{
+    width: 200px;
+    background-color: var(--colorfondomenu);
+    color: var(--colorletramenu);
+    position: fixed; 
+    bottom: 100px;
+    
+
+}
+
+nav ul{
+    list-style: none;
+}
+nav li{
+    list-style: none;
+    padding: 5px;
+    border-bottom: 2px solid var(--colorletramenu);
+    transition:all 500ms ease;
+}
+nav ul li a{
+    display: block;
+    padding: 15px;
+    color: var(--colorletramenu);
+    text-decoration: none;
+}
+nav ul li:hover{
+    background: #000000;
+    color: #EEEEEE;
+}
+nav ul li a:hover{
+     color: #EEEEEE;
+}
+
+
+section{
+    padding-top: 50px;
+    padding-left: 200px;
+    width: 95%;
+    margin: auto;
+    text-align: justify;
+    
+}
+
+p{
+    margin: 16px 0;
+    line-height: 150%;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: var(--colorfondomenu) ;
+    color: var(--colorfondo);
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+
+header{
+    width: 100%;
+    height: 500px;
+    background-image: url("./img/BBVA-calentamiento-global-apertura-sostenibilidad.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+.placa{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    background-color: rgba(45, 63, 78, 0.397);
+}
+
+h1{
+    color: var(--colorletramenu);
+    font-size: 2em;
+    position:absolute;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    left: 30%;
+    top: 50%; 
+   
+}
+h1::before{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) ;
+    transition: 0.8s all;
+}
+h1::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -8%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.8s all;
+}
+h1:hover::before{
+    width: 100%;
+}
+h1:hover::after{
+    width: 100%;
+
+}
+
+.texto{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    background-color: rgb(255, 255, 255);
+    
+}
+h3{
+    color: var(--colorfondomenu);
+    font-size: 40px;
+    position: relative;
+    left: 250px;
+    font-family: 'Libre Baskerville', serif;
+    
+}
+
+h2{
+    color: var(--colorfondomenu);
+    font-family: 'Libre Baskerville', serif;
+    
+}
+
+.texto{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    text-shadow: 5px 5px 20px cornsilk;
+    }
+
+
+.otro{
+    font-size: 45px;
+    color: #fff;
+    margin: 40px auto;
+}
+
+
+.subir{
+    width: 90px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 55px;
+    right: 15px;
+    z-index: 101;
+    transition: all 0.5s;
+}
+form{
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 10px;
+   
+
+}
+
+input, textarea{
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    left: 250px;
+
+}
+
+textarea{
+    height: 150px;
+
+}
+
+#boton{
+    background-color: #E3C770;
+    color: #fff;
+    padding: 10px;
+}
+#boton:hover{
+    padding:50px;
+    background-color: #FECD70;
+}
+button{
+    width: 10px;
+    height: 10px;
+    background-color: #E3C770;
+    color: rgb(0, 0, 0);
+}
+
+@media(max-width: 1024px){
+    body{
+        width: 100%;
+        background-color: #F3E0B5;
+        font-family: 'Roboto Slab', serif;
+        color: #000;
+
+   }
+   nav{
+    width: 200px;
+    background-color: #FFAE6D;
+    color: white;
+    position: fixed; 
+    bottom: 100px;
+    
+
+}
+
+nav ul{
+    list-style: none;
+}
+nav li{
+    list-style: none;
+    padding: 5px;
+    border-bottom: 2px solid #fff;
+    transition:all 500ms ease;
+}
+nav ul li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background: #000000;
+    color: #EEEEEE;
+}
+nav ul li a:hover{
+     color: #EEEEEE;
+}
+.texto{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
+   h1{
+    width: 100%;
+    color: #fff;
+   }
+   h3{
+    color: #E3C770;
+    font-size: 40px;
+    position: relative;
+    left: 250px;
+    font-family: 'Libre Baskerville', serif;
+    
+}
+section{
+    padding-top: 50px;
+    padding-left: 200px;
+    width: 80%;
+    margin: 20px;
+    text-align: justify;
+    
+}
+
+   
+}
+
+
+@media(max-width: 680px){
+    body{
+        width: 100%;
+        height: 100%;
+
+}
+nav{
+    width: 100%;
+    position: relative;
+
+}
+
+nav ul{
+    list-style: none;
+}
+nav li{
+    list-style: none;
+    display: block;
+    padding: 5px;
+    border-bottom: 2px solid;
+    transition:all 500ms ease;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+}
+.texto{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    
+    text-shadow: 5px 5px 20px cornsilk;
+}
+
+h1{
+    width: 50%;
+    color: #fff;
+}
+h3{
+    color: #E3C770;
+    font-size: 40px;
+    position: relative;
+    left: 200px;
+    font-family: 'Libre Baskerville', serif;
+    
+}
+.placa{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    background-color: rgba(45, 63, 78, 0.397);
+}
+
+    
+form{
+    width: 300px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    border-radius: 10px;
+   
+
+}
+input, textarea{
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    left: 200px;
+
+}
+
+textarea{
+    height: 100px;
+
+}
+section{
+    padding-top: 0px;
+    padding-left: 10px;
+    width: 80%;
+    margin: 0;
+    text-align: justify;
+    
+
+}
+}
+
